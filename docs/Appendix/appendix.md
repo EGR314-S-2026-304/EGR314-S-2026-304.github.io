@@ -4,6 +4,6 @@ title: Appendix
 
 ## Appendix Content
 
-* [Component Selection Process](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/)
+* [Appendix - Extra Team Organization Information](https://embedded-systems-design.github.io/template_report/Appendix/01-Organization-Information/Append-Organization/)
 
-> Yes! This is not a working link within this template, but should help get you started.
+> add to list.
