@@ -6,12 +6,12 @@ tags:
 ---
 <center>
 <font size="8">Project Name<br>
-<font size="5">Team ###<br>
-**Submission: month, DD, YYYY**<br>
-Spring - 202x<br>
+<font size="5">Team 304<br>
+**Submission: May, 04, 2026**<br>
+Spring - 2026<br>
 <font size="4">Arizona State University<br>
 **EGR 314**<br>
-Professor Name<br>
+Professor Nichols<br>
   
 
 </center>
