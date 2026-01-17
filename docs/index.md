@@ -26,7 +26,7 @@ Professor Nichols<br>
 
 | **Team Member**        |**Ind Datasheet Links** |
 | ---------------------- | -----------------------|
-| Name #1                | [JohnDoe.GitHub](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/) |
+| Name #1  Michael Kim | [mjkim.GitHub](https://mjkim21-dev.github.io/mjkim.github.io/) |
 | Name #2                | link |
 | Name #3                | link |
 | Name #4                | link |
