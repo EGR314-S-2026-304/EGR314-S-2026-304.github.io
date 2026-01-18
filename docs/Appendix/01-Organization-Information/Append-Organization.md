@@ -13,8 +13,8 @@ _Table #: Project Roles and Duties_
 | Meeting leader    | Schedules team meetings, creates and distributes an agenda for each meeting, and runs each meeting                                        |
 | Meeting recorder  | Takes minutes of each team meeting, including attendance, and records action items and to whom they are assigned                          |
 | Assignment leader | Coordinates the team's work on a given assignment on Canvas before the due date                                                           |
-| Project monitor   | Tracks the team's progress relative to the project schedule (Gantt chart) and keeps team members apprised of deadlines and project status |
-| Project monitor 2   | Tracks the team's progress relative to the project schedule (Gantt chart) and keeps team members apprised of deadlines and project status |
+| Project monitor (Software) | Tracks the team's progress on software-related tasks relative to the project schedule (Gantt chart) and keeps team members apprised of deadlines and project status |
+| Project monitor (Hardware) | Tracks the team's on hardware-related tasks relative to the project schedule (Gantt chart) and keeps team members apprised of deadlines and project status |
 
 ## Communication Channels
 
@@ -26,7 +26,7 @@ As a team, we have decided the primary method of communication is through Discor
 | **Name** | **First Choice Communication** | **Second Choice Communication** | **Third Choice Communication** |
 | :------- | :----------------------------- | :------------------------------ | :----------------------------- |
 | Michael |   Discord                             |    Email                            |   in-person                             |
-| Hafsa |                                |                                 |                                |
+| Hafsa | Discord | Email | In-person |
 | Roshan |                                |                                 |                                |
 | Dylan |                                |                                 |                                |
 | Quinn |                                |                                 |                                |
