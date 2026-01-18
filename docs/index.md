@@ -17,9 +17,7 @@ Professor Nichols<br>
 </center>
 
 ## Team Introduction
-> This will be updated as part of the preparation for the External Review.<br>
->    * This needs to be updated to reflect a team introduction.<br>
->    * Content should also help an unfamiliar reader navigate to areas of interest.
+Team 304 is a 5-person team consisting of Michael, Hafsa, Dylan, Quinn, and Roshan. All are students in EGR 314 taught by professor Kevin Nichols at Arizona State University. The team is still undecided about our current project; however, the task is to build an "exploration device".
 
 
 ## Team Members Datasheet links
@@ -30,3 +28,4 @@ Professor Nichols<br>
 | Hafsa Kaysan | [hfsksn.GitHub](https://hfsksn.github.io/) |
 | Name #3                | link |
 | Name #4                | link |
+| Name #5                | link |
