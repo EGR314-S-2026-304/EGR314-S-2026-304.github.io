@@ -1,4 +1,7 @@
 site_name: EGR 314 Report Team 304
+site_url: https://egr314-s-2026-304.github.io/
+repo_url: https://github.com/EGR314-S-2026-304/EGR314-S-2026-304.github.io
+edit_uri: edit/main/docs/
 
 theme:
   name: material
