@@ -13,9 +13,9 @@ This charter was agreed upon because all our team members value teamwork and eff
 
 ## Product Mission Statement
 
-Describe the distilled purpose, function, or reason for your product to exist. From this form a team mission statement. Google's mission statement is:
+ > "Team 304's mission is to take the learnings from EGR 314 and assemble an 'exploration device' to satisfy the requirements of the course EGR 314 and expand skills in engineering."
 
- > "Google's mission is to organize the world's information and make it universally accessible and useful."
+This mission statement was agreed upon by combining the team's charter and goals, then combining with the project requirements of an "exploration device".
 
 ## Other Organizational Information
 
