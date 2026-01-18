@@ -6,26 +6,26 @@ title: Appendix - Extra Team Organization Information
 
 >Define the roles and responsibilities that will be filled by the team members as you work to achieve your team's mission. The table below is an example of some roles that each team should have; as you organize your team, you may identify other roles that would help your team successfully fulfill the team mission. ***See assignment for more details.***
 
-_Table #: Project Roles and Duties_
+_Table 1: Project Roles and Duties_
 
-| **Role**          | **Duties**                                                                                                                                |
-| :---------------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
-| Meeting leader    | Schedules team meetings, creates and distributes an agenda for each meeting, and runs each meeting                                        |
-| Meeting recorder  | Takes minutes of each team meeting, including attendance, and records action items and to whom they are assigned                          |
-| Assignment leader | Coordinates the team's work on a given assignment on Canvas before the due date                                                           |
-| Project monitor (Software) | Tracks the team's progress on software-related tasks relative to the project schedule (Gantt chart) and keeps team members apprised of deadlines and project status |
-| Project monitor (Hardware) | Tracks the team's on hardware-related tasks relative to the project schedule (Gantt chart) and keeps team members apprised of deadlines and project status |
+| **Name** | **Role**          | **Duties**                                                                                                                                |
+| :------- | :---------------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
+| Michael | Meeting leader    | Schedules team meetings, creates and distributes an agenda for each meeting, and runs each meeting                                        |
+| Roshan | Meeting recorder  | Takes minutes of each team meeting, including attendance, and records action items and to whom they are assigned                          |
+| Hafsa | Assignment leader | Coordinates the team's work on a given assignment on Canvas before the due date                                                           |
+| | Project monitor (Software) | Tracks the team's progress on software-related tasks relative to the project schedule (Gantt chart) and keeps team members apprised of deadlines and project status |
+| | Project monitor (Hardware) | Tracks the team's on hardware-related tasks relative to the project schedule (Gantt chart) and keeps team members apprised of deadlines and project status |
 
 ## Communication Channels
 
 ### Team Communication Method
 As a team, we have decided the primary method of communication is through Discord.
 
-*Table #: Team Members' Preferred Communication Modes*
+*Table 2: Team Members' Preferred Communication Modes*
 
 | **Name** | **First Choice Communication** | **Second Choice Communication** | **Third Choice Communication** |
 | :------- | :----------------------------- | :------------------------------ | :----------------------------- |
-| Michael |   Discord                             |    Email                            |   in-person                             |
+| Michael |   Discord                             |    Email                            |   In-person                             |
 | Hafsa | Discord | Email | In-person |
 | Roshan |                                |                                 |                                |
 | Dylan |                                |                                 |                                |
