@@ -39,7 +39,6 @@ Discord was agreed upon as the primary method of communication outside of class.
 
 ### Meeting Schedule and Coordination
 
->Your team should identify common times for meetings every week. If you are not meeting weekly, your team's chances of success this semester are low
 Team 304 will meet accordingly, using Discord chat and virtual group calls as needed. The meeting will be scheduled ahead of time in person and listed on the Discord chat to keep everyone accomadated and up to speed. As a group, we understand the flexibility of schedule needed for this course, so changes are to be regular and the group will understand and accept changes as long as one gets the required ask of the group completed. As for accountability, all members will agree upon their role and task before the beginning of the project and be responsible necessary work.
 
 
