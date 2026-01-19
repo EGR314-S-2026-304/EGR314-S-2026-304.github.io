@@ -28,7 +28,7 @@ As a team, we have decided the primary method of communication is through Discor
 | Hafsa | Discord | Email | In-person |
 | Roshan | Discord | Email | In-person |
 | Dylan |  Discord                              |       Email                          |          In-person                      |
-| Quinn |                                |                                 |                                |
+| Quinn |  Discord                              |       Email                          |              In-Person                  |
 
 ### Communication Procedures
 
@@ -42,7 +42,7 @@ Team 304 will meet accordingly, using Discord chat and virtual group calls as ne
 
 
 ### Team Coordination & Accountability
-All assignments can be submitted by anyone based on availability. To ensure each team member has the knowledge and skills required for a task, we will regularly communicate and understand strengths and weakness, it is imperative that we, as students, stay ready to learn and embrace challenges. For a missed contribution, the team must notify ahead of time, but in the case of a missed assignment or task, the issue will be brought to the professor ASAP to see the next steps. Consequences of underperformance will be reflected on both individual and team grades, so as a member of team 30,4, please hold yourself accountable for your portion and the team.
+All assignments can be submitted by anyone based on availability. To ensure each team member has the knowledge and skills required for a task, we will regularly communicate and understand strengths and weakness, it is imperative that we, as students, stay ready to learn and embrace challenges. For a missed contribution, the team must notify ahead of time, but in the case of a missed assignment or task, the issue will be brought to the professor ASAP to see the next steps. Consequences of underperformance will be reflected on both individual and team grades, so as a member of team 304, please hold yourself accountable for your portion and the team.
 
 
 #### Conflict Recognition & Resolution
