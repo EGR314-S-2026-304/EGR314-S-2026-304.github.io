@@ -14,8 +14,8 @@ Below are 100 listed ideas
 
 |                   requirement / need |             feature              | detail                                                                      |
 | -----------------------------------: | :------------------------------: | --------------------------------------------------------------------------- |
-| The device                      |              RGB LED                   | the device has                                        |
-| The device                      |              RGB LED                   | the device has                                        |
+| The device                      |              RGB LED                   | the device has...                                        |
+| The device                      |              RGB LED                   | the device has...                                        |
 | The device                      |              RGB LED                   | the device has                                        |
 | The device                      |              RGB LED                   | the device has                                        |
 | The device                      |              RGB LED                   | the device has                                        |
