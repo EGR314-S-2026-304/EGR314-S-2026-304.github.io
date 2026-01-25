@@ -10,7 +10,7 @@ As for the audience of our device, we want to target the curious, the people who
 
 ## Generating Ideas
 
-Below are 100 listed ideas
+Below are 100 listed ideas, each with a unique feature, and details about it would be used.
 
 |                   requirement / need |             feature              | detail                                                                      |
 | -----------------------------------: | :------------------------------: | --------------------------------------------------------------------------- |
