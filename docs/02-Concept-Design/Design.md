@@ -14,7 +14,7 @@ Below are 100 listed ideas
 
 |                   requirement / need |             feature              | detail                                                                      |
 | -----------------------------------: | :------------------------------: | --------------------------------------------------------------------------- |
-| The device                      |              Display and HMI                   | Device has an LED screen to display data and for HMI                                         |
+| The device                     |              Display and HMI                   | Device has an LED screen to display data and for HMI                                         |
 | The device                      |             Camera system                   | Device has a camera to record observations                                        |
 | The device                      |              Data storage                  | Device can save/store the data that it collects                                         |
 | The device                      |             Environmental durability                   | Device is designed to withstand outdoor conditions                                         |
