@@ -115,7 +115,7 @@ Below are ~100 listed ideas
 
 
 ## Sort, Rank, and Group
-Here, we created 5 groups which we felt were important, and sorted the 94 concepts to see what we needed to focus on.
+Here, we created 5 groups which we felt were important, and sorted the 98 concepts to see what we needed to focus on.
 
 | Group #  |             Category          | detail                                                                      |
 |:-------: | :------------------------------: | --------------------------------------------------------------------------- |
