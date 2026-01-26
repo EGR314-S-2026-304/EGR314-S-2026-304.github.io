@@ -34,7 +34,7 @@ Below are ~100 listed ideas
 |18. |              Bluetooth communication                   | Device transmits data wirelessly through Bluetooth            |
 |19.|              Base stabilization                   | Device has a stable base component                            |
 |20.|             Low light imaging                   | Device can capture low light scenarios                              |
-|21. |              Terrain mobilityD                   | Device can navigate uneven terrain                        |
+|21. |              Terrain mobility                   | Device can navigate uneven terrain                        |
 |22. |              Speed control                   | Device can adjust speed                                         |
 |23. |             Auto return function                   | Device can return to the starting point                               |
 |24.|             GPS integration                  | Device can connect to GPS                                         |
