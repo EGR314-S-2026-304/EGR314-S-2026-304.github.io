@@ -5,7 +5,7 @@ tags:
 - tag2
 ---
 <center>
-<font size="8">Project Name<br>
+<font size="8">EV-Scope<br>
 <font size="5">Team 304<br>
 **Submission: May 04, 2026**<br>
 Spring - 2026<br>
