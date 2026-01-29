@@ -20,7 +20,7 @@ The following sections document the requirements that Team 304 should meet. Belo
 | Surface mounted microcontroller | 1 PIC or ESP | 8-bit PIC | No |
 | Wireless Communication | Able to send or receive a Wi-Fi data | Send and receive Wi-Fi Data to MQTT | no |
 | Housing | Full 3d printed housing for all components | Safely stores and looks like an EV-Scope | Yes |
-|*The rest are items your modules need to support the task you are covering for the team's device.* | --- | --- | **NO** |
+| Motors | Able to be precisely moved | millimeters | Yes |
 
 ## Assigning Responsibilities
 | **Member Name** | **Requirement Description** |
