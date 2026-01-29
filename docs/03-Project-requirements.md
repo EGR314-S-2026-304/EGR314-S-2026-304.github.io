@@ -28,5 +28,5 @@ The following sections document the requirements that Team 304 should meet. Belo
 |    Michael   |                Selection and Switch (Change this)                       |
 |    Hafsa     |                User Interface (Change this)                        |
 |    Dylan     |               The system shall include an onboard Wi Fi communication module capable of establishing a stable connection to a local wireless network in order to transmit camera image data to a remote user device and receive control commands for telescope operation.                   |
-|    Roshan    |                Camera System (Change this)                        |
+|    Roshan    |                The system shall include a camera system capable of capturing and recording high-quality visual data of celestial objects, supporting low-light imaging, and interfacing with the onboard processor for storage and remote transmission. The camera shall be mounted securely to the telescope assembly, provide sufficient resolution and sensitivity to detect stars and planets, and allow for user control over capture settings via the telescope’s control interface.                        |
 |    Quinn     |                Motor System (Change this)                        |
