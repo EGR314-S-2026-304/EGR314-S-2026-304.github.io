@@ -20,7 +20,7 @@ The following sections document the requirements that Team 304 should meet. Belo
 | ... | ... | ... | No |
 | User Interface | User is able to input commands manually and device operates according to each command | Switch and sensor inputs cause outputs to sensors, LCD screen, and LEDs | No |
 | Housing | Full 3d printed housing for all components | Safely stores and looks like an EV-Scope | Yes |
-| Motors | Able to be precisely moved | millimeters | no |
+| Motors | Able to be precisely moved | 0.5 millimeters | Yes |
 
 ## Assigning Responsibilities
 | **Member Name** | **Requirement Description** |
