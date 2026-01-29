@@ -17,7 +17,7 @@ The following sections document the requirements that Team 304 should meet. Belo
 | **Requirement Description** | **Measure of<br> Threshold** | **Target<br>Measure** |**Stretch<br>Requirement<br>(Y-N)**|
 |-----------------------------| ----------------- | ----------------- | :-----: |
 | ... | ... | ... | No |
-| ... | ... | ... | No |
+| Wi Fi Connectivity | Able to connect to a local Wi Fi network and successfully send or receive data | Reliable bidirectional Wi Fi communication enabling real time image transfer and remote control of telescope functions | No |
 | User Interface | User can input commands manually, and the device operates according to each command and sensor data | User and sensor inputs cause outputs to sensors and physical interface | No |
 | Housing | Full 3d printed housing for all components | Safely stores and looks like an EV-Scope | Yes |
 | Scope Movement (motor) | Able to be precisely moved | 0.5 millimeters | Yes |
