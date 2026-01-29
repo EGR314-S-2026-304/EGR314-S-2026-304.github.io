@@ -18,7 +18,7 @@ The following sections document the requirements that Team 304 should meet. Belo
 |-----------------------------| ----------------- | ----------------- | :-----: |
 | ... | ... | ... | No |
 | ... | ... | ... | No |
-| User Interface | User is able to input commands into EV-scope manually and device operates according to each command | Switch and sensor inputs cause outputs to sensors, LCD screen, and LEDs | No |
+| User Interface | User is able to input commands manually and device operates according to each command | Switch and sensor inputs cause outputs to sensors, LCD screen, and LEDs | No |
 | Housing | Full 3d printed housing for all components | Safely stores and looks like an EV-Scope | Yes |
 | Motors | Able to be precisely moved | millimeters | no |
 
