@@ -18,7 +18,7 @@ The following sections document the requirements that Team 304 should meet. Belo
 |-----------------------------| ----------------- | ----------------- | :-----: |
 | ... | ... | ... | No |
 | ... | ... | ... | No |
-| Wireless Communication | Able to send or receive a Wi-Fi data | Send and receive Wi-Fi Data to MQTT | no |
+| ... | ... | ... | no |
 | Housing | Full 3d printed housing for all components | Safely stores and looks like an EV-Scope | Yes |
 | Motors | Able to be precisely moved | millimeters | no |
 
