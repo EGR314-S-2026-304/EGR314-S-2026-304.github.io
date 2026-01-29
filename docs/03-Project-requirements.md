@@ -8,7 +8,7 @@ The following sections document the requirements that Team 304 should meet. Belo
 ### How our features became requirements
   - **Camera**: The telescope needs to observe and record visual data of celestial objects, meaning that a camera that can record the night sky is needed for this project. To better fit the needs of the user, our team will experiment with other features for the camera, such as low-light filters and built-in storage.
   - **Motor**: Motors are required to rotate the camera to be able to observe and track celestial objects.
-  - **WI-FI Connectivity**: Wi-fi will be implemented in this project to remotely transmit data recorded by the camera to the user. An app, website, or other piece of software would need to be designed so that the user can easily access the data as well as send commands to the telescope.
+  - **WI-FI Connectivity**: Wi-fi will be implemented in this project to transmit data recorded by the camera to the user remotely. An app, website, or other piece of software would need to be designed so that users can easily access the data and send commands to the telescope.
   - **User Interface**: The automated telescope will have a physical user interface so that it can be set up and operated by the user without an internet connection. This would include components such as an on and off switch, LCD screen, and LEDs.
   - **Housing**: To protect the telescope from outside elements, a housing will need to be modeled and built around the features listed above.
 
@@ -16,8 +16,8 @@ The following sections document the requirements that Team 304 should meet. Belo
 
 | **Requirement Description** | **Measure of<br> Threshold** | **Target<br>Measure** |**Stretch<br>Requirement<br>(Y-N)**|
 |-----------------------------| ----------------- | ----------------- | :-----: |
-| ... | ... | ... | No |
-| Wi Fi Connectivity | Able to connect to a local Wi Fi network and successfully send or receive data | Reliable bidirectional Wi Fi communication enabling real time image transfer and remote control of telescope functions | No |
+| Camera | Ability to turn on and see objects |  Being able to focus in dark conditions and be aimed at stars, with zoom | No |
+| Wi Fi Connectivity | Able to connect to a local Wi Fi network and successfully send or receive data | Reliable bidirectional Wi Fi communication enabling real-time image transfer and remote control of telescope functions | No |
 | User Interface | User can input commands manually, and the device operates according to each command and sensor data | User and sensor inputs cause outputs to sensors and physical interface | No |
 | Housing | Full 3d printed housing for all components | Safely stores and looks like an EV-Scope | Yes |
 | Scope Movement (motor) | Able to be precisely moved | 0.5 millimeters | Yes |
