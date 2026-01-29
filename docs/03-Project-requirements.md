@@ -6,11 +6,11 @@ title: Project Requirements
 The following sections document the requirements that Team 304 should meet. Below is a table listing requirements in which we feel are sufficient for this project. We have also included other useful information about each requirement, as well as whether the requirement is among our stretch goal.
 
 ### How our features became requirements
-  - **User Interface**: 
-  - **WI-FI Connectivity**: The Wi-fi system will be used to 
-  - **Camera System**: The camera system is essential for the telescope to see objects.
-  - **Motor**: The motor is required for moving the Automated Telescope to the correct position.
-  - **Selection and Switch**:
+  - **Camera**: The telescope needs to observe and record visual data of celestial objects, meaning that a camera that can record the night sky is needed for this project. To better fit the needs of the user, our team will experiment with other features for the camera, such as low-light filters and built-in storage.
+  - **Motor**: Motors are required to automatically rotate the camera to be able to observe and track celestial objects.
+  - **WI-FI Connectivity**: Wi-fi will be implemented in this project in order to remotely transmit data recorded by the camera to the user. An app, website, or other piece of software would need to be designed so that the user can easily access the data as well as send commands to the telescope.
+  - **User Interface**: The automated telescope will have a phyical user interface so that it can be set-up and operated by the user without internet connection. This would include components such as an on and off switch, LCD screen, and LEDs.
+  - **Housing**: To protect the telescope from outside elements, a housing will need to be modeled and built around the features listed above.
 
 ### Requirement Table
 
@@ -18,7 +18,6 @@ The following sections document the requirements that Team 304 should meet. Belo
 |-----------------------------| ----------------- | ----------------- | :-----: |
 | Surface mounted, 3.3V switching power regulator | 3.2 Volts | 3.3 Volts | No |
 | Surface mounted microcontroller | 1 PIC or ESP | 8-bit PIC | No |
-| Wireless Communication | Able to send or receive a Wi-Fi data | Send and receive Wi-Fi Data to MQTT | no |
 | Wireless Communication | Able to send or receive a Wi-Fi data | Send and receive Wi-Fi Data to MQTT | no |
 | Housing | Full 3d printed housing for all components | Safely stores and looks like an EV-Scope | Yes |
 |*The rest are items your modules need to support the task you are covering for the team's device.* | --- | --- | **NO** |
