@@ -13,7 +13,7 @@ This charter was agreed upon because all our team members value teamwork and eff
 
 ## Product Mission Statement
 
- > "Team 304's mission is to take the learnings from EGR 314 and assemble an 'exploration device' to satisfy the requirements of the course EGR 314 and expand skills in engineering."
+ > "Team 304’s mission is to develop a connected, app-controlled astronomical scope that autonomously identifies and tracks stars, dynamically adjusts exposure and shutter settings, and captures clear celestial images."
 
 This mission statement was agreed upon by combining the team's charter and goals, then combining with the project requirements of an "exploration device".
 
