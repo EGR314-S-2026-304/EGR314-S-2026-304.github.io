@@ -24,7 +24,6 @@ Team 304 is a 5-person team consisting of Michael, Hafsa, Dylan, Quinn, and Rosh
 
 | **Team Member**        |**Ind Datasheet Links** |
 | ---------------------- | -----------------------|
-| Michael Kim | [mjkim.GitHub](https://mjkim21-dev.github.io/mjkim21.github.io/) |
 | Hafsa Kaysan | [hfsksn.GitHub](https://hfsksn.github.io/) |
 | Roshan Roy Geoffrey Joe | [roshanroy-r64x.GitHub](https://roshanroy-r64x.github.io/roshanroy-r64x-EGR314.github.io/) |
 | Dylan Vierra-Guillermo                | [dvierrag.Github](https://dvierrag.github.io/EGR314dvierrag.github.io/) |
