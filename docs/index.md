@@ -17,7 +17,7 @@ Professor Nichols<br>
 </center>
 
 ## Team Introduction
-Team 304 is a 5-person team consisting of Michael, Hafsa, Dylan, Quinn, and Roshan. All are students in EGR 314 taught by Professor Kevin Nichols at Arizona State University. The team is still undecided about our current project; however, the task is to build an "exploration device".
+Team 304 is a 4-person team consisting of Hafsa, Dylan, Quinn, and Roshan. All are students in EGR 314 taught by Professor Kevin Nichols at Arizona State University. The team is still undecided about our current project; however, the task is to build an "exploration device".
 
 
 ## Team Members Datasheet links
@@ -26,5 +26,5 @@ Team 304 is a 5-person team consisting of Michael, Hafsa, Dylan, Quinn, and Rosh
 | ---------------------- | -----------------------|
 | Hafsa Kaysan | [hfsksn.GitHub](https://hfsksn.github.io/) |
 | Roshan Roy Geoffrey Joe | [roshanroy-r64x.GitHub](https://roshanroy-r64x.github.io/roshanroy-r64x-EGR314.github.io/) |
-| Dylan Vierra-Guillermo                | [dvierrag.Github](https://dvierrag.github.io/EGR314dvierrag.github.io/) |
-| Quinn Maness              | [qmaness-hue.Github](https://qmaness-hue.github.io/EGR314qmaness.github.io/) |
+| Dylan Vierra-Guillermo  | [dvierrag.Github](https://dvierrag.github.io/EGR314dvierrag.github.io/) |
+| Quinn Maness            | [qmaness-hue.Github](https://qmaness-hue.github.io/EGR314qmaness.github.io/) |
