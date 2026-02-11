@@ -9,7 +9,6 @@ _Table 1: Project Roles and Duties_
 
 | **Name** | **Role**          | **Duties**                                                                                                                                |
 | :------- | :---------------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
-| Michael | Meeting leader    | Schedules team meetings, creates and distributes an agenda for each meeting, and runs each meeting                                        |
 | Roshan | Meeting recorder  | Takes minutes of each team meeting, including attendance, and records action items and to whom they are assigned                          |
 | Hafsa | Assignment leader | Coordinates the team's work on a given assignment on Canvas before the due date                                                           |
 | Dylan | Project monitor (Software) | Tracks the team's progress on software-related tasks relative to the project schedule (Gantt chart) and keeps team members apprised of deadlines and project status |
@@ -24,7 +23,6 @@ As a team, we have decided the primary method of communication is through Discor
 
 | **Name** | **First Choice Communication** | **Second Choice Communication** | **Third Choice Communication** |
 | :------- | :----------------------------- | :------------------------------ | :----------------------------- |
-| Michael |   Discord                             |    Email                            |   In-person                             |
 | Hafsa | Discord | Email | In-person |
 | Roshan | Discord | Email | In-person |
 | Dylan |  Discord                              |       Email                          |          In-person                      |
@@ -38,7 +36,7 @@ As a team, we have decided the primary method of communication is through Discor
 
 ### Meeting Schedule and Coordination
 
-Team 304 will meet accordingly, using Discord chat and virtual group calls as needed. The meeting will be scheduled ahead of time in person and listed on the Discord chat to keep everyone accomadated and up to speed. As a group, we understand the flexibility of schedule needed for this course, so changes are to be regular and the group will understand and accept changes as long as one gets the required ask of the group completed. As for accountability, all members will agree upon their role and task before the beginning of the project and be responsible necessary work.
+Team 304 will meet accordingly, using Discord chat and virtual group calls as needed. The meeting will be scheduled ahead of time in person and listed on the Discord chat to keep everyone accomadated and up to speed. As a group, we understand the flexibility of schedule needed for this course, so changes are to be regular, and the group will understand and accept changes as long as one gets the required ask of the group completed. As for accountability, all members will agree upon their role and task before the beginning of the project and be responsible necessary work.
 
 
 ### Team Coordination & Accountability
