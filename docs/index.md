@@ -17,7 +17,7 @@ Professor Nichols<br>
 </center>
 
 ## Team Introduction
-Team 304 is a 4-person team consisting of Hafsa, Dylan, Quinn, and Roshan. All are students in EGR 314 taught by Professor Kevin Nichols at Arizona State University. The team is still undecided about our current project; however, the task is to build an "exploration device".
+Team 304 is a 4-person team consisting of Hafsa, Dylan, Quinn, and Roshan. All are students in the EGR 314 course taught by Professor Kevin Nichols at Arizona State University. For this course, our team was tasked wth building an exploration device using sensors, actuators, Wi-Fi or bluetooth, I2C, SPI, and UART communication between subsystems. To complete this project, our group has developed an Automated Electronic Telescope using the knowledge and materials provided by this course.
 
 
 ## Team Members Datasheet links
