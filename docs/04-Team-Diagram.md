@@ -43,7 +43,7 @@ sequenceDiagram
 | 4                                      | Translate Coordinate Input to Motor Input     |
 | 5                                      | Translate Potentiometer inputs to Motor Input |
 | 6                                      | Power Button Pushed                           |
-| 7                                      |  |
+| 7                                      | Send Motor X, Y                               |
 | 8                                      |  |
 | 9                                      |  |
 | 10                                     |  |
@@ -55,7 +55,7 @@ Message Type 1:
 
 | Byte 1-2 (uint16_t) | Byte 3 (uint8_t) |
 | ------------------- | ---------------- |
-| 02                  | WiFi (bool)      |
+| 01                  | wifi (bool)      |
 
 Message Type 2:
 
@@ -85,8 +85,28 @@ Message Type 6:
 
 | Byte 1-2 (uint16_t) | Byte 3 (uint8_t)  |
 | ------------------- | ----------------- |
-| 06                  | Button (uint8_t) |
+| 06                  | Button (bool)     |
 
 Message Type 7:
 
+| Byte 1-2 (uint16_t) | Byte 3 (uint8_t) | Byte 4-5 (uint16_t) |
+| ------------------- | ---------------- | ------------------- |
+| 07                  | X (uint8_t)      | Y (uint16_t)        |
 
+Message Type 8:
+
+| Byte 1-2 (uint16_t) | Byte 3 (uint8_t) | Byte 4-5 (uint16_t) |
+| ------------------- | ---------------- | ------------------- |
+| 08                  | X (uint8_t)      | Y (uint16_t)        |
+
+Message Type 9:
+
+| Byte 1-2 (uint16_t) | Byte 3 (uint8_t) | Byte 4-5 (uint16_t) |
+| ------------------- | ---------------- | ------------------- |
+| 09                  | X (uint8_t)      | Y (uint16_t)        |
+
+Message Type 10:
+
+| Byte 1-2 (uint16_t) | Byte 3 (uint8_t) | Byte 4-5 (uint16_t) |
+| ------------------- | ---------------- | ------------------- |
+| 10                  | X (uint8_t)      | Y (uint16_t)        |
