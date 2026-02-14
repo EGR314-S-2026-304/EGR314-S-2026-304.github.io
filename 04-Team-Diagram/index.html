@@ -490,9 +490,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#communication-sequence-diagram" class="md-nav__link">
+  <a href="#communication-sequence" class="md-nav__link">
     <span class="md-ellipsis">
-      Communication Sequence Diagram
+      Communication Sequence
     </span>
   </a>
   
@@ -592,9 +592,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#communication-sequence-diagram" class="md-nav__link">
+  <a href="#communication-sequence" class="md-nav__link">
     <span class="md-ellipsis">
-      Communication Sequence Diagram
+      Communication Sequence
     </span>
   </a>
   
@@ -627,7 +627,17 @@
 
 <h2 id="team-block-diagram">Team Block Diagram</h2>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/EGR314_Team304_BlockDiagram.drawio.png" data-desc-position="bottom"><img alt="" src="../image/EGR314_Team304_BlockDiagram.drawio.png"></a></p>
-<h2 id="communication-sequence-diagram">Communication Sequence Diagram</h2>
+<h2 id="communication-sequence">Communication Sequence</h2>
+<pre class="mermaid"><code>sequenceDiagram
+  autonumber
+  Alice-&gt;&gt;John: Hello John, how are you?
+  loop Healthcheck
+      John-&gt;&gt;John: Fight against hypochondria
+  end
+  Note right of John: Rational thoughts!
+  John--&gt;&gt;Alice: Great!
+  John-&gt;&gt;Bob: How about you?
+  Bob--&gt;&gt;John: Jolly good!</code></pre>
 
 
 
