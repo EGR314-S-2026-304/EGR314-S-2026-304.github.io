@@ -648,16 +648,16 @@
 <h2 id="communication-sequence">Communication Sequence</h2>
 <pre class="mermaid"><code>sequenceDiagram
   autonumber
-  Hafsa-&gt;&gt;John: Hello John, how are you?
+  Alice-&gt;&gt;John: Hello John, how are you?
   loop Healthcheck
       John-&gt;&gt;John: Fight against hypochondria
   end
-  Note right of John: Rational thoughts!
-  John--&gt;&gt;Alice: Great!
-  John-&gt;&gt;Bob: How about you?
-  Bob--&gt;&gt;John: Jolly good!
-  create actor W as WebUser
-  John-&gt;&gt;W: Hi</code></pre>
+  Note right of Hafsa: Rational thoughts!
+  Hafsa--&gt;&gt;Alice: Great!
+  Hafsa-&gt;&gt;Bob: How about you?
+  Bob--&gt;&gt;Hafsa: Jolly good!
+  create actor P as In-PersonUser
+  P-&gt;&gt;Hafsa: Hi</code></pre>
 <h2 id="message-structure">Message Structure</h2>
 <hr>
 <p>config:
