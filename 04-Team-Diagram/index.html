@@ -650,13 +650,13 @@
   autonumber
   actor WebUser
   WebUser--&gt;&gt;Dylan: Input Coordinates
-  Dylan-&gt;&gt;Hafsa: Turn On
+  Dylan-&gt;&gt;Hafsa: Turn On Telescope
   Hafsa-&gt;&gt;Hafsa: Translate Coordinates to Motor Input
-  Hafsa-&gt;&gt;Quinn: Move Camera along X, Y axis
-  Quinn-&gt;&gt;Roshan: Begin Recording
+  Hafsa-&gt;&gt;Quinn: Move Camera along X, Y axis w/ Motors
+  Quinn-&gt;&gt;Roshan: Begin Recording Data w/ Camera and Hall Effect Sensor
   loop WebData
     Roshan-&gt;&gt;Dylan: Send Data
-    Dylan--&gt;&gt;WebUser: Live Data
+    Dylan--&gt;&gt;WebUser: Live Data on App
   end
   actor InPersonUser
   InPersonUser--&gt;&gt;Hafsa: Adjust Camera View
@@ -665,7 +665,7 @@
   Quinn-&gt;&gt;Roshan: Begin Recording
   loop ScreenData
     Roshan-&gt;&gt;Hafsa: Send Data
-    Hafsa--&gt;&gt;InPersonUser: Display Data
+    Hafsa--&gt;&gt;InPersonUser: Display Data on OLED
   end</code></pre>
 <h2 id="message-structure">Message Structure</h2>
 <table>
@@ -678,19 +678,19 @@
 <tbody>
 <tr>
 <td>1</td>
-<td>x</td>
+<td>Set Data Receiver to Web or In-person</td>
 </tr>
 <tr>
 <td>2</td>
-<td></td>
+<td>Translate Coordinate Input to Motor Input</td>
 </tr>
 <tr>
 <td>3</td>
-<td></td>
+<td>Power Button Pushed</td>
 </tr>
 <tr>
 <td>4</td>
-<td></td>
+<td>sub</td>
 </tr>
 <tr>
 <td>5</td>
@@ -735,15 +735,60 @@
 <thead>
 <tr>
 <th>Byte 1-2 (uint16_t)</th>
-<th>Byte 3 (uint16_t)</th>
+<th>Byte 3 (uint8_t)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>UserMode (uint8_t)</td>
+</tr>
+</tbody>
+</table>
+<p>Message Type 2:</p>
+<table>
+<thead>
+<tr>
+<th>Byte 1-2 (uint16_t)</th>
+<th>Byte 3 (uint8_t)</th>
 <th>Byte 4-5 (uint16_t)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td></td>
-<td></td>
+<td>2</td>
+<td>X (uint8_t)</td>
+<td>Y (uint16_t)</td>
+</tr>
+</tbody>
+</table>
+<p>Message Type 3:</p>
+<table>
+<thead>
+<tr>
+<th>Byte 1-2 (uint16_t)</th>
+<th>Byte 3 (uint8_t)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>Button1 (uint8_t)</td>
+</tr>
+</tbody>
+</table>
+<p>Message Type 4:</p>
+<table>
+<thead>
+<tr>
+<th>Byte 1-2 (uint16_t)</th>
+<th>Byte 3-58 (char)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4</td>
+<td>string</td>
 </tr>
 </tbody>
 </table>
