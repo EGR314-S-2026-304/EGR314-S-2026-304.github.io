@@ -18,7 +18,7 @@ sequenceDiagram
   Hafsa->>Quinn: Move Camera along X, Y axis
   Quinn->>Roshan: Begin Recording
   Roshan->>Dylan: Send Data
-  Dylan-->>Websuser: Live Data
+  Dylan-->>WebsUser: Live Data
   actor InPersonUser
 ```
 
