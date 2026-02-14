@@ -11,8 +11,6 @@ title: Block Diagram, Protocol, and Message Structure
 ``` mermaid
 sequenceDiagram
   autonumber
-  create actor W as WebUser
-  W->>Hafsa: Hi
   Hafsa->>John: Hello John, how are you?
   loop Healthcheck
       John->>John: Fight against hypochondria
@@ -21,4 +19,6 @@ sequenceDiagram
   John-->>Alice: Great!
   John->>Bob: How about you?
   Bob-->>John: Jolly good!
+  create actor W as WebUser
+  John->>W: Hi
 ```
