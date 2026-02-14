@@ -20,7 +20,7 @@ sequenceDiagram
   Quinn->>Roshan: Begin Recording Data w/ Camera and Hall Effect Sensor
   loop WebData
     Roshan->>Dylan: Send Data
-    Dylan-->>WebUser: Live Data on App
+    Dylan-->>WebUser: Data on App
   end
   actor InPersonUser
   InPersonUser-->>Hafsa: Adjust Camera View
@@ -45,10 +45,8 @@ sequenceDiagram
 | 6                                      | Power Button Pushed                           |
 | 7                                      | Set Motor X, Y                                |
 | 8                                      | Set Roshan subsystem to On/Off                |
-| 9                                      | Transmit Compressed Video                     |
+| 9                                      | Transmit Compressed Image                     |
 | 10                                     | Transmit Hall Effect Data                     |
-| 11                                     | Display hall effect data                      |
-| 12                                     | Display video data                            |
 
 Message Type 1:
 
@@ -94,30 +92,19 @@ Message Type 7:
 
 Message Type 8:
 
-| Byte 1-2 (uint16_t) | Byte 3 (uint8_t) | Byte 4-5 (uint16_t) |
-| ------------------- | ---------------- | ------------------- |
-| 08                  | X (uint8_t)      | Y (uint16_t)        |
+| Byte 1-2 (uint16_t) | Byte 3 (uint8_t)         |
+| ------------------- | ------------------------ |
+| 08                  | subsystemState (bool)    |
 
 Message Type 9:
 
-| Byte 1-2 (uint16_t) | Byte 3 (uint8_t) | Byte 4-5 (uint16_t) |
-| ------------------- | ---------------- | ------------------- |
-| 09                  | X (uint8_t)      | Y (uint16_t)        |
+| Byte 1-2 (uint16_t) | Byte 3-58 (uint8_t)  |
+| ------------------- | -------------------- |
+| 09                  | CameraData (uint8_t) |
 
 Message Type 10:
 
-| Byte 1-2 (uint16_t) | Byte 3 (uint8_t) | Byte 4-5 (uint16_t) |
-| ------------------- | ---------------- | ------------------- |
-| 10                  | X (uint8_t)      | Y (uint16_t)        |
+| Byte 1-2 (uint16_t) | Byte 3 (uint8_t)   |
+| ------------------- | ------------------ |
+| 10                  | HallData (uint8_t) |
 
-Message Type 11:
-
-| Byte 1-2 (uint16_t) | Byte 3 (uint8_t) | Byte 4-5 (uint16_t) |
-| ------------------- | ---------------- | ------------------- |
-| 10                  | X (uint8_t)      | Y (uint16_t)        |
-
-Message Type 12:
-
-| Byte 1-2 (uint16_t) | Byte 3 (uint8_t) | Byte 4-5 (uint16_t) |
-| ------------------- | ---------------- | ------------------- |
-| 10                  | X (uint8_t)      | Y (uint16_t)        |
