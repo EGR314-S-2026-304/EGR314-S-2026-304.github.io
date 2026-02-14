@@ -498,6 +498,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#message-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Structure
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -600,6 +609,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#message-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Structure
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -640,6 +658,22 @@
   Bob--&gt;&gt;John: Jolly good!
   create actor W as WebUser
   John-&gt;&gt;W: Hi</code></pre>
+<h2 id="message-structure">Message Structure</h2>
+<hr>
+<p>config:
+  packet:
+    bitsPerRow: 16
+    bitWidth: 64</p>
+<hr>
+<p>packet-beta
+title Message
+0: "0x41"
+1: "0x5a"
+2: "Source ID"
+3: "Dest ID"
+4-61: "Message (Variable Length &lt;= 58 Bytes)"
+62: "0x59"
+63: "0x42"</p>
 
 
 
