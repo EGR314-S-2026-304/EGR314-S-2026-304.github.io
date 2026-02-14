@@ -20,12 +20,12 @@ sequenceDiagram
   Roshan->>Dylan: Send Data
   Dylan-->>WebUser: Live Data
   actor InPersonUser
-  InPersonUser->>Hafsa: Adjust Camera View
+  InPersonUser-->>Hafsa: Adjust Camera View
   Hafsa->>Hafsa: Translate Input to Motor Input
   Hafsa->>Quinn: Move Camera along X, Y axis
   Quinn->>Roshan: Begin Recording
   Roshan->>Hafsa: Send Data
-  Hafsa->>InPersonUser: Display Data
+  Hafsa-->>InPersonUser: Display Data
 ```
 
 ## Message Structure
