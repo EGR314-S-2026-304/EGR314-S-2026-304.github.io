@@ -12,6 +12,7 @@ title: Block Diagram, Protocol, and Message Structure
 sequenceDiagram
   autonumber
   create actor W as WebUser
+  W->>Hafsa: Hi
   Hafsa->>John: Hello John, how are you?
   loop Healthcheck
       John->>John: Fight against hypochondria
