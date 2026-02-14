@@ -630,7 +630,8 @@
 <h2 id="communication-sequence">Communication Sequence</h2>
 <pre class="mermaid"><code>sequenceDiagram
   autonumber
-  Alice-&gt;&gt;John: Hello John, how are you?
+  create actor W as Web User
+  Hafsa-&gt;&gt;John: Hello John, how are you?
   loop Healthcheck
       John-&gt;&gt;John: Fight against hypochondria
   end
