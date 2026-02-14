@@ -68,3 +68,10 @@ extra:
     - icon: fontawesome/regular/file-code
       link: /2026_spring
       name: 2026 Site    
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
