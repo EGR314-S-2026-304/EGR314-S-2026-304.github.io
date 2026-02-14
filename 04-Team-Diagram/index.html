@@ -649,10 +649,14 @@
 <pre class="mermaid"><code>sequenceDiagram
   autonumber
   actor WebUser
-  actor InPersonUser
-  WebUser--&gt;&gt;Dylan: View Object
-  Dylan-&gt;&gt;Roshan: Activate Camera
-  Roshan-&gt;&gt;Roshan: Find Object</code></pre>
+  WebUser--&gt;&gt;Dylan: Input Coordinates
+  Dylan-&gt;&gt;Hafsa: Turn On
+  Hafsa-&gt;&gt;Hafsa: Translate Coordinates to Motor Input
+  Hafsa-&gt;&gt;Quinn: Move Camera along X, Y axis
+  Quinn-&gt;&gt;Roshan: Begin Recording
+  Roshan-&gt;&gt;Dylan: Send Data
+  Dylan--&gt;&gt;Websuser: Live Data
+  actor InPersonUser</code></pre>
 <h2 id="message-structure">Message Structure</h2>
 <hr>
 <p>config:
