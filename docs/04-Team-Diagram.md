@@ -16,7 +16,6 @@ sequenceDiagram
   WebUser-->>Dylan: View Object
   Dylan->>Roshan: Activate Camera
   Roshan->>Roshan: Find Object
-  
 ```
 
 ## Message Structure
