@@ -38,18 +38,17 @@ sequenceDiagram
 | Message Type<br>byte 1-2<br>(uint16_t) | Description                                   |
 | -------------------------------------- | --------------------------------------------- |
 | 1                                      | WiFi Signal Received                          |
-| 2                                      | Print Data Receiver Type (Web or In-person)   |
+| 2                                      | Set Data Receiver Type (Web or In-person)     |
 | 3                                      | Print User Input                              |
 | 4                                      | Translate Coordinate Input to Motor Input     |
 | 5                                      | Translate Potentiometer inputs to Motor Input |
 | 6                                      | Power Button Pushed                           |
-| 7                                      | Send Motor X, Y                               |
-| 8                                      |  |
-| 9                                      |  |
-| 10                                     |  |
-| 11                                     |  |
-| 12                                     |  |
-| 13                                     |  |
+| 7                                      | Set Motor X, Y                                |
+| 8                                      | Set Roshan subsystem to On/Off                |
+| 9                                      | Transmit Compressed Video                     |
+| 10                                     | Transmit Hall Effect Data                     |
+| 11                                     | Display hall effect data                      |
+| 12                                     | Display video data                            |
 
 Message Type 1:
 
@@ -106,6 +105,18 @@ Message Type 9:
 | 09                  | X (uint8_t)      | Y (uint16_t)        |
 
 Message Type 10:
+
+| Byte 1-2 (uint16_t) | Byte 3 (uint8_t) | Byte 4-5 (uint16_t) |
+| ------------------- | ---------------- | ------------------- |
+| 10                  | X (uint8_t)      | Y (uint16_t)        |
+
+Message Type 11:
+
+| Byte 1-2 (uint16_t) | Byte 3 (uint8_t) | Byte 4-5 (uint16_t) |
+| ------------------- | ---------------- | ------------------- |
+| 10                  | X (uint8_t)      | Y (uint16_t)        |
+
+Message Type 12:
 
 | Byte 1-2 (uint16_t) | Byte 3 (uint8_t) | Byte 4-5 (uint16_t) |
 | ------------------- | ---------------- | ------------------- |
