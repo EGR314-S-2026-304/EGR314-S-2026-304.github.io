@@ -12,10 +12,14 @@ title: Block Diagram, Protocol, and Message Structure
 sequenceDiagram
   autonumber
   actor WebUser
+  WebUser-->>Dylan: Input Coordinates
+  Dylan->>Hafsa: Turn On
+  Hafsa->>Hafsa: Translate Coordinates to Motor Input
+  Hafsa->>Quinn: Move Camera along X, Y axis
+  Quinn->>Roshan: Begin Recording
+  Roshan->>Dylan: Send Data
+  Dylan-->>Websuser: Live Data
   actor InPersonUser
-  WebUser-->>Dylan: View Object
-  Dylan->>Roshan: Activate Camera
-  Roshan->>Roshan: Find Object
 ```
 
 ## Message Structure
