@@ -654,15 +654,19 @@
   Hafsa-&gt;&gt;Hafsa: Translate Coordinates to Motor Input
   Hafsa-&gt;&gt;Quinn: Move Camera along X, Y axis
   Quinn-&gt;&gt;Roshan: Begin Recording
-  Roshan-&gt;&gt;Dylan: Send Data
-  Dylan--&gt;&gt;WebUser: Live Data
+  loop WebData
+    Roshan-&gt;&gt;Dylan: Send Data
+    Dylan--&gt;&gt;WebUser: Live Data
+  end
   actor InPersonUser
   InPersonUser--&gt;&gt;Hafsa: Adjust Camera View
   Hafsa-&gt;&gt;Hafsa: Translate Input to Motor Input
   Hafsa-&gt;&gt;Quinn: Move Camera along X, Y axis
   Quinn-&gt;&gt;Roshan: Begin Recording
-  Roshan-&gt;&gt;Hafsa: Send Data
-  Hafsa--&gt;&gt;InPersonUser: Display Data</code></pre>
+  loop ScreenData
+    Roshan-&gt;&gt;Hafsa: Send Data
+    Hafsa--&gt;&gt;InPersonUser: Display Data
+  end</code></pre>
 <h2 id="message-structure">Message Structure</h2>
 <hr>
 <p>config:
