@@ -650,6 +650,7 @@
   autonumber
   actor WebUser
   WebUser--&gt;&gt;Dylan: Input Coordinates
+  Dylan-&gt;&gt;Dylan: LED blink
   Dylan-&gt;&gt;Hafsa: Turn On Telescope
   Hafsa-&gt;&gt;Hafsa: Translate Coordinates to Motor Input
   Hafsa-&gt;&gt;Quinn: Move Camera along X, Y axis w/ Motors
@@ -678,27 +679,27 @@
 <tbody>
 <tr>
 <td>1</td>
-<td>Set Data Receiver to Web or In-person</td>
+<td>WiFi Signal Received</td>
 </tr>
 <tr>
 <td>2</td>
-<td>Translate Coordinate Input to Motor Input</td>
+<td>Print Data Receiver Type (Web or In-person)</td>
 </tr>
 <tr>
 <td>3</td>
-<td>Power Button Pushed</td>
+<td>Print User Input</td>
 </tr>
 <tr>
 <td>4</td>
-<td>sub</td>
+<td>Translate Coordinate Input to Motor Input</td>
 </tr>
 <tr>
 <td>5</td>
-<td></td>
+<td>Translate Potentiometer inputs to Motor Input</td>
 </tr>
 <tr>
 <td>6</td>
-<td></td>
+<td>Power Button Pushed</td>
 </tr>
 <tr>
 <td>7</td>
@@ -740,12 +741,42 @@
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td>UserMode (uint8_t)</td>
+<td>02</td>
+<td>WiFi (bool)</td>
 </tr>
 </tbody>
 </table>
 <p>Message Type 2:</p>
+<table>
+<thead>
+<tr>
+<th>Byte 1-2 (uint16_t)</th>
+<th>Byte 3-58 (char)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>02</td>
+<td>string</td>
+</tr>
+</tbody>
+</table>
+<p>Message Type 3:</p>
+<table>
+<thead>
+<tr>
+<th>Byte 1-2 (uint16_t)</th>
+<th>Byte 3-58 (char)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>03</td>
+<td>string</td>
+</tr>
+</tbody>
+</table>
+<p>Message Type 4:</p>
 <table>
 <thead>
 <tr>
@@ -756,13 +787,30 @@
 </thead>
 <tbody>
 <tr>
-<td>2</td>
+<td>04</td>
 <td>X (uint8_t)</td>
 <td>Y (uint16_t)</td>
 </tr>
 </tbody>
 </table>
-<p>Message Type 3:</p>
+<p>Message Type 5:</p>
+<table>
+<thead>
+<tr>
+<th>Byte 1-2 (uint16_t)</th>
+<th>Byte 3 (uint8_t)</th>
+<th>Byte 4-5 (uint16_t)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>05</td>
+<td>X (uint8_t)</td>
+<td>Y (uint16_t)</td>
+</tr>
+</tbody>
+</table>
+<p>Message Type 6:</p>
 <table>
 <thead>
 <tr>
@@ -772,26 +820,12 @@
 </thead>
 <tbody>
 <tr>
-<td>3</td>
-<td>Button1 (uint8_t)</td>
+<td>06</td>
+<td>Button (uint8_t)</td>
 </tr>
 </tbody>
 </table>
-<p>Message Type 4:</p>
-<table>
-<thead>
-<tr>
-<th>Byte 1-2 (uint16_t)</th>
-<th>Byte 3-58 (char)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>4</td>
-<td>string</td>
-</tr>
-</tbody>
-</table>
+<p>Message Type 7:</p>
 
 
 
