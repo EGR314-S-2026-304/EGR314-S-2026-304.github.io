@@ -6,4 +6,4 @@ title: Block Diagram, Protocol, and Message Structure
 
 ![](image/EGR314_Team304_BlockDiagram.drawio.png)
 
-## UML 
+## Communication Sequence Diagram 
