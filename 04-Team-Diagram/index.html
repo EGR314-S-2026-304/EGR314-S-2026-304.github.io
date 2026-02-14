@@ -703,7 +703,7 @@
 </tr>
 <tr>
 <td>7</td>
-<td></td>
+<td>Send Motor X, Y</td>
 </tr>
 <tr>
 <td>8</td>
@@ -741,8 +741,8 @@
 </thead>
 <tbody>
 <tr>
-<td>02</td>
-<td>WiFi (bool)</td>
+<td>01</td>
+<td>wifi (bool)</td>
 </tr>
 </tbody>
 </table>
@@ -821,11 +821,78 @@
 <tbody>
 <tr>
 <td>06</td>
-<td>Button (uint8_t)</td>
+<td>Button (bool)</td>
 </tr>
 </tbody>
 </table>
 <p>Message Type 7:</p>
+<table>
+<thead>
+<tr>
+<th>Byte 1-2 (uint16_t)</th>
+<th>Byte 3 (uint8_t)</th>
+<th>Byte 4-5 (uint16_t)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>07</td>
+<td>X (uint8_t)</td>
+<td>Y (uint16_t)</td>
+</tr>
+</tbody>
+</table>
+<p>Message Type 8:</p>
+<table>
+<thead>
+<tr>
+<th>Byte 1-2 (uint16_t)</th>
+<th>Byte 3 (uint8_t)</th>
+<th>Byte 4-5 (uint16_t)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>08</td>
+<td>X (uint8_t)</td>
+<td>Y (uint16_t)</td>
+</tr>
+</tbody>
+</table>
+<p>Message Type 9:</p>
+<table>
+<thead>
+<tr>
+<th>Byte 1-2 (uint16_t)</th>
+<th>Byte 3 (uint8_t)</th>
+<th>Byte 4-5 (uint16_t)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>09</td>
+<td>X (uint8_t)</td>
+<td>Y (uint16_t)</td>
+</tr>
+</tbody>
+</table>
+<p>Message Type 10:</p>
+<table>
+<thead>
+<tr>
+<th>Byte 1-2 (uint16_t)</th>
+<th>Byte 3 (uint8_t)</th>
+<th>Byte 4-5 (uint16_t)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>X (uint8_t)</td>
+<td>Y (uint16_t)</td>
+</tr>
+</tbody>
+</table>
 
 
 
