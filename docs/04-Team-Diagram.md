@@ -6,4 +6,17 @@ title: Block Diagram, Protocol, and Message Structure
 
 ![](image/EGR314_Team304_BlockDiagram.drawio.png)
 
-## Communication Sequence Diagram 
+## Communication Sequence
+
+``` mermaid
+sequenceDiagram
+  autonumber
+  Alice->>John: Hello John, how are you?
+  loop Healthcheck
+      John->>John: Fight against hypochondria
+  end
+  Note right of John: Rational thoughts!
+  John-->>Alice: Great!
+  John->>Bob: How about you?
+  Bob-->>John: Jolly good!
+```
