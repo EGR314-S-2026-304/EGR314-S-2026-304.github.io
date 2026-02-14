@@ -19,7 +19,7 @@ sequenceDiagram
   Hafsa-->>Alice: Great!
   Hafsa->>Bob: How about you?
   Bob-->>Hafsa: Jolly good!
-  create actor P as In-PersonUser
+  create actor P as InPersonUser
   Hafsa->>P: Hi
 ```
 
