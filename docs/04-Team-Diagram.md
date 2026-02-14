@@ -20,7 +20,7 @@ sequenceDiagram
   Hafsa->>Bob: How about you?
   Bob-->>Hafsa: Jolly good!
   create actor P as InPersonUser
-  Hafsa->>P: Hi
+  P->>Hafsa: Hi
 ```
 
 ## Message Structure
