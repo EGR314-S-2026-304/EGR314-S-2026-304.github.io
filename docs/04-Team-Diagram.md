@@ -11,16 +11,12 @@ title: Block Diagram, Protocol, and Message Structure
 ``` mermaid
 sequenceDiagram
   autonumber
-  Alice->>John: Hello John, how are you?
-  loop Healthcheck
-      John->>John: Fight against hypochondria
-  end
-  Note right of Hafsa: Rational thoughts!
-  Hafsa-->>Alice: Great!
-  Hafsa->>Bob: How about you?
-  Bob-->>Hafsa: Jolly good!
-  create actor P as InPersonUser
-  Hafsa->>P: Hi
+  actor WebUser
+  actor InPersonUser
+  WebUser-->>Dylan: View Object
+  Dylan->>Roshan: Activate Camera
+  Roshan->>Roshan: Find Object
+  
 ```
 
 ## Message Structure
