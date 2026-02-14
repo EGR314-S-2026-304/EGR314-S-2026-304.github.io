@@ -683,7 +683,7 @@
 </tr>
 <tr>
 <td>2</td>
-<td>Print Data Receiver Type (Web or In-person)</td>
+<td>Set Data Receiver Type (Web or In-person)</td>
 </tr>
 <tr>
 <td>3</td>
@@ -703,31 +703,27 @@
 </tr>
 <tr>
 <td>7</td>
-<td>Send Motor X, Y</td>
+<td>Set Motor X, Y</td>
 </tr>
 <tr>
 <td>8</td>
-<td></td>
+<td>Set Roshan subsystem to On/Off</td>
 </tr>
 <tr>
 <td>9</td>
-<td></td>
+<td>Transmit Compressed Video</td>
 </tr>
 <tr>
 <td>10</td>
-<td></td>
+<td>Transmit Hall Effect Data</td>
 </tr>
 <tr>
 <td>11</td>
-<td></td>
+<td>Display hall effect data</td>
 </tr>
 <tr>
 <td>12</td>
-<td></td>
-</tr>
-<tr>
-<td>13</td>
-<td></td>
+<td>Display video data</td>
 </tr>
 </tbody>
 </table>
@@ -877,6 +873,40 @@
 </tbody>
 </table>
 <p>Message Type 10:</p>
+<table>
+<thead>
+<tr>
+<th>Byte 1-2 (uint16_t)</th>
+<th>Byte 3 (uint8_t)</th>
+<th>Byte 4-5 (uint16_t)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>X (uint8_t)</td>
+<td>Y (uint16_t)</td>
+</tr>
+</tbody>
+</table>
+<p>Message Type 11:</p>
+<table>
+<thead>
+<tr>
+<th>Byte 1-2 (uint16_t)</th>
+<th>Byte 3 (uint8_t)</th>
+<th>Byte 4-5 (uint16_t)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>X (uint8_t)</td>
+<td>Y (uint16_t)</td>
+</tr>
+</tbody>
+</table>
+<p>Message Type 12:</p>
 <table>
 <thead>
 <tr>
