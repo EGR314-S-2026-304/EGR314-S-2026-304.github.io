@@ -11,7 +11,8 @@ title: Block Diagram, Protocol, and Message Structure
 ``` mermaid
 sequenceDiagram
   autonumber
-  Alice->>John: Hello John, how are you?
+  create actor W as Web User
+  Hafsa->>John: Hello John, how are you?
   loop Healthcheck
       John->>John: Fight against hypochondria
   end
