@@ -4,4 +4,4 @@ title: Block Diagram, Protocol, and Message Structure
 
 ## Header
 
-Add content!
+![](EGR214_Team304_BlockDiagram.png)
