@@ -658,6 +658,8 @@
   loop WebData
     Roshan-&gt;&gt;Dylan: Send Data
     Dylan--&gt;&gt;WebUser: Data on App
+    WebUser--&gt;&gt;Dylan: Data Received
+    Dylan-&gt;&gt;Dylan: Refresh data (1s)
   end
   actor InPersonUser
   InPersonUser--&gt;&gt;Hafsa: Adjust Camera View
@@ -667,6 +669,8 @@
   loop ScreenData
     Roshan-&gt;&gt;Hafsa: Send Data
     Hafsa--&gt;&gt;InPersonUser: Display Data on OLED
+    InPersonUser--&gt;&gt;Hafsa: Data Received
+    Hafsa-&gt;&gt;Hafsa: Refresh data (1s)
   end</code></pre>
 <h2 id="message-structure">Message Structure</h2>
 <table>
