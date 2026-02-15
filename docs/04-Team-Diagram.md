@@ -21,6 +21,8 @@ sequenceDiagram
   loop WebData
     Roshan->>Dylan: Send Data
     Dylan-->>WebUser: Data on App
+    WebUser-->>Dylan: Data Received
+    Dylan->>Dylan: Refresh data (1s)
   end
   actor InPersonUser
   InPersonUser-->>Hafsa: Adjust Camera View
@@ -30,6 +32,8 @@ sequenceDiagram
   loop ScreenData
     Roshan->>Hafsa: Send Data
     Hafsa-->>InPersonUser: Display Data on OLED
+    InPersonUser-->>Hafsa: Data Received
+    Hafsa->>Hafsa: Refresh data (1s)
   end
 ```
 
