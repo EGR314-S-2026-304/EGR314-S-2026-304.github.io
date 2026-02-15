@@ -6,6 +6,8 @@ title: Block Diagram, Protocol, and Message Structure
 
 ![](image/EGR314_Team304_BlockDiagram.drawio.png)
 
+**Figure 1**: Subsystem PCBs and Connections, PDF version [*here*](EGR314_Team304_BlockDiagram.drawio.pdf)
+
 ## Communication Sequence
 
 ``` mermaid
