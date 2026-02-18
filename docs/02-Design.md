@@ -6,7 +6,7 @@ title: Concept Generation and Design Ideation
 
 The goal of Team 304’s exploration device is to be able to remotely observe, record, interpret, and transmit data on natural phenomena that cannot easily be investigated by humans alone. With this template in mind, Team 304 must also integrate a human-machine interface, wireless communication, sensor and actuator subsystems, and a controller as per the requirements of the project. 
 
-As for the audience of our device, we want to target the curious, anyone interested in engaging in the scientific study of our world through data collection and physical observation. Team 304 aims to satisfy the ordinary person who would like to explore the world and beyond.
+As for the audience of our device, we want to target the curious; anyone interested in engaging in the scientific study of our world by virtue of understanding other worlds and how they function. This alteration of our perspective can be an essential step towards the betterment of our world. Team 304 aims to satisfy the ordinary person who would like to expand their perspective beyond Earth, but remain grounded.
 
 ## Generating Ideas
 
