@@ -42,4 +42,4 @@ All assignments can be submitted by anyone based on availability. To ensure each
 
 
 #### Conflict Recognition & Resolution
-In the case of conflict, the attention is brought up within the team and will be an internal issue. If the issue is not resolved even through in-person communication, then we may bring the issue to the professor. If recurring and ignored, then the matter will be brought to the instructor to drop the troubled member.
+In the case of conflict/miscommunication, the attention will be brought up within the team and will be an internal issue. If the issue is not resolved even through in-person communication, then the matter will be brought to the instructor to attempt to find a resolution.
