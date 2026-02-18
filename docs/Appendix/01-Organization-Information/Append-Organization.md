@@ -17,6 +17,8 @@ _Table 1: Project Roles and Duties_
 
 ### Team Communication Method
 As a team, we have decided the primary method of communication is through Instagram.
+Originally, we had 5 team members, but due to personal circumstances we are down to three team members. **Any mention of Discord as communication was from when we had the 5 team members, as that was the previous primary communication method.**
+
 
 *Table 2: Team Members' Preferred Communication Modes*
 
