@@ -652,9 +652,9 @@
   actor WebUser
   WebUser--&gt;&gt;Dylan: Input Coordinates
   Dylan-&gt;&gt;Dylan: LED blink
-  Dylan-&gt;&gt;Hafsa: Turn On Telescope
-  Hafsa-&gt;&gt;Hafsa: Translate Coordinates to Motor Input
-  Hafsa-&gt;&gt;Quinn: Move Camera along X, Y axis w/ Motors
+  Dylan-&gt;&gt;x: Turn On Telescope
+  x-&gt;&gt;x: Translate Coordinates to Motor Input
+  x-&gt;&gt;Quinn: Move Camera along X, Y axis w/ Motors
   Quinn-&gt;&gt;Roshan: Begin Recording Data w/ Camera and Hall Effect Sensor
   loop WebData
     Roshan-&gt;&gt;Dylan: Send Data
@@ -663,15 +663,15 @@
     Dylan-&gt;&gt;Dylan: Refresh data (1s)
   end
   actor InPersonUser
-  InPersonUser--&gt;&gt;Hafsa: Adjust Camera View
-  Hafsa-&gt;&gt;Hafsa: Translate Input to Motor Input
-  Hafsa-&gt;&gt;Quinn: Move Camera along X, Y axis
+  InPersonUser--&gt;&gt;x: Adjust Camera View
+  x-&gt;&gt;x: Translate Input to Motor Input
+  x-&gt;&gt;Quinn: Move Camera along X, Y axis
   Quinn-&gt;&gt;Roshan: Begin Recording
   loop ScreenData
-    Roshan-&gt;&gt;Hafsa: Send Data
-    Hafsa--&gt;&gt;InPersonUser: Display Data on OLED
-    InPersonUser--&gt;&gt;Hafsa: Data Received
-    Hafsa-&gt;&gt;Hafsa: Refresh data (1s)
+    Roshan-&gt;&gt;x: Send Data
+    x--&gt;&gt;InPersonUser: Display Data on OLED
+    InPersonUser--&gt;&gt;x: Data Received
+    x-&gt;&gt;x: Refresh data (1s)
   end</code></pre>
 <h2 id="message-structure">Message Structure</h2>
 <table>
