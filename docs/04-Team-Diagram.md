@@ -16,9 +16,9 @@ sequenceDiagram
   actor WebUser
   WebUser-->>Dylan: Input Coordinates
   Dylan->>Dylan: LED blink
-  Dylan->>Hafsa: Turn On Telescope
-  Hafsa->>Hafsa: Translate Coordinates to Motor Input
-  Hafsa->>Quinn: Move Camera along X, Y axis w/ Motors
+  Dylan->>x: Turn On Telescope
+  x->>x: Translate Coordinates to Motor Input
+  x->>Quinn: Move Camera along X, Y axis w/ Motors
   Quinn->>Roshan: Begin Recording Data w/ Camera and Hall Effect Sensor
   loop WebData
     Roshan->>Dylan: Send Data
@@ -27,15 +27,15 @@ sequenceDiagram
     Dylan->>Dylan: Refresh data (1s)
   end
   actor InPersonUser
-  InPersonUser-->>Hafsa: Adjust Camera View
-  Hafsa->>Hafsa: Translate Input to Motor Input
-  Hafsa->>Quinn: Move Camera along X, Y axis
+  InPersonUser-->>x: Adjust Camera View
+  x->>x: Translate Input to Motor Input
+  x->>Quinn: Move Camera along X, Y axis
   Quinn->>Roshan: Begin Recording
   loop ScreenData
-    Roshan->>Hafsa: Send Data
-    Hafsa-->>InPersonUser: Display Data on OLED
-    InPersonUser-->>Hafsa: Data Received
-    Hafsa->>Hafsa: Refresh data (1s)
+    Roshan->>x: Send Data
+    x-->>InPersonUser: Display Data on OLED
+    InPersonUser-->>x: Data Received
+    x->>x: Refresh data (1s)
   end
 ```
 
