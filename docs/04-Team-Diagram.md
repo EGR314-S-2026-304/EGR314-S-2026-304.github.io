@@ -7,7 +7,7 @@ title: Block Diagram, Protocol, and Message Structure
 ![]()<img width="2409" height="799" alt="314-Team304-TeamBlockDiagram drawio" src="https://github.com/user-attachments/assets/6de21c1a-1afc-4d95-a31b-eb8a54b17aef" />
 
 
-**Figure 1**: Subsystem PCBs and Connections, PDF version [*here*](<img width="9716" height="3276" alt="image" src="https://github.com/user-attachments/assets/b663cd4a-c20f-4a5c-9393-c07cf5cbb637" />)
+**Figure 1**: Subsystem PCBs and Connections, PDF version [*here*](https://github.com/user-attachments/files/25704085/314-Team304-TeamBlockDiagram.drawio.pdf)
 
 ## Communication Sequence
 
