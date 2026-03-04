@@ -653,22 +653,11 @@
   WebUser--&gt;&gt;Dylan: Input Coordinates
   Dylan-&gt;&gt;Dylan: LED blink
   Dylan-&gt;&gt;x: Turn On Telescope
-  x-&gt;&gt;x: Translate Coordinates to Motor Input
   x-&gt;&gt;Quinn: Move Camera along X, Y axis w/ Motors
-  Quinn-&gt;&gt;Roshan: Begin Recording Data w/ Camera and Hall Effect Sensor
-  loop WebData
-    Roshan-&gt;&gt;Dylan: Send Data
-    Dylan--&gt;&gt;WebUser: Data on App
-    WebUser--&gt;&gt;Dylan: Data Received
-    Dylan-&gt;&gt;Dylan: Refresh data (1s)
-  end
   actor InPersonUser
   InPersonUser--&gt;&gt;x: Adjust Camera View
   x-&gt;&gt;x: Translate Input to Motor Input
   x-&gt;&gt;Quinn: Move Camera along X, Y axis
-  Quinn-&gt;&gt;Roshan: Begin Recording
-  loop ScreenData
-    Roshan-&gt;&gt;x: Send Data
     x--&gt;&gt;InPersonUser: Display Data on OLED
     InPersonUser--&gt;&gt;x: Data Received
     x-&gt;&gt;x: Refresh data (1s)
