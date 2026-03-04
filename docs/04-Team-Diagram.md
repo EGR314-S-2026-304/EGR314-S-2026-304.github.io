@@ -16,10 +16,10 @@ sequenceDiagram
   autonumber
 
 
-  participant Roshan
-  participant Dylan
+  participant Roshan (OLED)
+  participant Dylan (wifi)
   participant Telescope
-  participant Quinn
+  participant Quinn (motors)
 
   Roshan-->>Dylan: Input Coordinates
   Dylan->>Dylan: LED Blink
