@@ -21,17 +21,17 @@ sequenceDiagram
   participant Telescope
   participant Quinn (motors)
 
-  Roshan-->>Dylan: Input Coordinates
-  Dylan->>Dylan: LED Blink
-  Dylan->>Telescope: Turn On Telescope
-  Telescope->>Quinn: Move Scope (X,Y Motors)
+  Roshan (OLED)-->>Dylan (wifi): Input Coordinates
+  Dylan (wifi)->>Dylan (wifi): LED Blink
+  Dylan (wifi)->>Telescope: Turn On Telescope
+  Telescope->>Quinn (motors): Move Scope (X,Y Motors)
 
-  Roshan-->>Telescope: Adjust Scope
+  Roshan (OLED)-->>Telescope: Adjust Scope
   Telescope->>Telescope: Translate Input to Motor Signals
-  Telescope->>Quinn: Move Scope (X,Y)
+  Telescope->>Quinn (motors): Move Scope (X,Y)
 
-  Telescope-->>Roshan: Display Data on OLED
-  Roshan-->>Telescope: Data Received
+  Telescope-->>Roshan (OLED): Display Data on OLED
+  Roshan (OLED)-->>Telescope: Data Received
   Telescope->>Telescope: Refresh Data (1s loop)
 ```
 
