@@ -43,12 +43,9 @@ sequenceDiagram
 | 2                                      | Set Data Receiver Type (Web or In-person)     |
 | 3                                      | Print User Input                              |
 | 4                                      | Translate Coordinate Input to Motor Input     |
-| 5                                      | Translate Potentiometer inputs to Motor Input |
 | 6                                      | Power Button Pushed                           |
 | 7                                      | Set Motor X, Y                                |
 | 8                                      | Set Roshan subsystem to On/Off                |
-| 9                                      | Transmit Compressed Image                     |
-| 10                                     | Transmit Hall Effect Data                     |
 
 Message Type 1:
 
@@ -97,16 +94,3 @@ Message Type 8:
 | Byte 1-2 (uint16_t) | Byte 3 (uint8_t)         |
 | ------------------- | ------------------------ |
 | 08                  | subsystemState (bool)    |
-
-Message Type 9:
-
-| Byte 1-2 (uint16_t) | Byte 3-58 (uint8_t)  |
-| ------------------- | -------------------- |
-| 09                  | CameraData (uint8_t) |
-
-Message Type 10:
-
-| Byte 1-2 (uint16_t) | Byte 3 (uint8_t)   |
-| ------------------- | ------------------ |
-| 10                  | HallData (uint8_t) |
-
