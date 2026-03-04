@@ -18,22 +18,11 @@ sequenceDiagram
   WebUser-->>Dylan: Input Coordinates
   Dylan->>Dylan: LED blink
   Dylan->>x: Turn On Telescope
-  x->>x: Translate Coordinates to Motor Input
   x->>Quinn: Move Camera along X, Y axis w/ Motors
-  Quinn->>Roshan: Begin Recording Data w/ Camera and Hall Effect Sensor
-  loop WebData
-    Roshan->>Dylan: Send Data
-    Dylan-->>WebUser: Data on App
-    WebUser-->>Dylan: Data Received
-    Dylan->>Dylan: Refresh data (1s)
-  end
   actor InPersonUser
   InPersonUser-->>x: Adjust Camera View
   x->>x: Translate Input to Motor Input
   x->>Quinn: Move Camera along X, Y axis
-  Quinn->>Roshan: Begin Recording
-  loop ScreenData
-    Roshan->>x: Send Data
     x-->>InPersonUser: Display Data on OLED
     InPersonUser-->>x: Data Received
     x->>x: Refresh data (1s)
