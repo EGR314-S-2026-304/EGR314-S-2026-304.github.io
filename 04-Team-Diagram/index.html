@@ -656,17 +656,17 @@
   participant Telescope
   participant Quinn (motors)
 
-  Roshan--&gt;&gt;Dylan: Input Coordinates
-  Dylan-&gt;&gt;Dylan: LED Blink
-  Dylan-&gt;&gt;Telescope: Turn On Telescope
-  Telescope-&gt;&gt;Quinn: Move Scope (X,Y Motors)
+  Roshan (OLED)--&gt;&gt;Dylan (wifi): Input Coordinates
+  Dylan (wifi)-&gt;&gt;Dylan (wifi): LED Blink
+  Dylan (wifi)-&gt;&gt;Telescope: Turn On Telescope
+  Telescope-&gt;&gt;Quinn (motors): Move Scope (X,Y Motors)
 
-  Roshan--&gt;&gt;Telescope: Adjust Scope
+  Roshan (OLED)--&gt;&gt;Telescope: Adjust Scope
   Telescope-&gt;&gt;Telescope: Translate Input to Motor Signals
-  Telescope-&gt;&gt;Quinn: Move Scope (X,Y)
+  Telescope-&gt;&gt;Quinn (motors): Move Scope (X,Y)
 
-  Telescope--&gt;&gt;Roshan: Display Data on OLED
-  Roshan--&gt;&gt;Telescope: Data Received
+  Telescope--&gt;&gt;Roshan (OLED): Display Data on OLED
+  Roshan (OLED)--&gt;&gt;Telescope: Data Received
   Telescope-&gt;&gt;Telescope: Refresh Data (1s loop)</code></pre>
 <h2 id="message-structure">Message Structure</h2>
 <table>
