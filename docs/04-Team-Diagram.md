@@ -14,19 +14,25 @@ title: Block Diagram, Protocol, and Message Structure
 ``` mermaid
 sequenceDiagram
   autonumber
-  actor WebUser
-  WebUser-->>Dylan: Input Coordinates
-  Dylan->>Dylan: LED blink
-  Dylan->>x: Turn On Telescope
-  x->>Quinn: Move Camera along X, Y axis w/ Motors
-  actor InPersonUser
-  InPersonUser-->>x: Adjust Camera View
-  x->>x: Translate Input to Motor Input
-  x->>Quinn: Move Camera along X, Y axis
-    x-->>InPersonUser: Display Data on OLED
-    InPersonUser-->>x: Data Received
-    x->>x: Refresh data (1s)
-  end
+
+
+  participant Roshan
+  participant Dylan
+  participant Telescope
+  participant Quinn
+
+  Roshan-->>Dylan: Input Coordinates
+  Dylan->>Dylan: LED Blink
+  Dylan->>Telescope: Turn On Telescope
+  Telescope->>Quinn: Move Scope (X,Y Motors)
+
+  Roshan-->>Telescope: Adjust Scope
+  Telescope->>Telescope: Translate Input to Motor Signals
+  Telescope->>Quinn: Move Scope (X,Y)
+
+  Telescope-->>Roshan: Display Data on OLED
+  Roshan-->>Telescope: Data Received
+  Telescope->>Telescope: Refresh Data (1s loop)
 ```
 
 ## Message Structure
