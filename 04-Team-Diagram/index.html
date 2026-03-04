@@ -649,19 +649,25 @@
 <h2 id="communication-sequence">Communication Sequence</h2>
 <pre class="mermaid"><code>sequenceDiagram
   autonumber
-  actor WebUser
-  WebUser--&gt;&gt;Dylan: Input Coordinates
-  Dylan-&gt;&gt;Dylan: LED blink
-  Dylan-&gt;&gt;x: Turn On Telescope
-  x-&gt;&gt;Quinn: Move Camera along X, Y axis w/ Motors
-  actor InPersonUser
-  InPersonUser--&gt;&gt;x: Adjust Camera View
-  x-&gt;&gt;x: Translate Input to Motor Input
-  x-&gt;&gt;Quinn: Move Camera along X, Y axis
-    x--&gt;&gt;InPersonUser: Display Data on OLED
-    InPersonUser--&gt;&gt;x: Data Received
-    x-&gt;&gt;x: Refresh data (1s)
-  end</code></pre>
+
+
+  participant Roshan
+  participant Dylan
+  participant Telescope
+  participant Quinn
+
+  Roshan--&gt;&gt;Dylan: Input Coordinates
+  Dylan-&gt;&gt;Dylan: LED Blink
+  Dylan-&gt;&gt;Telescope: Turn On Telescope
+  Telescope-&gt;&gt;Quinn: Move Scope (X,Y Motors)
+
+  Roshan--&gt;&gt;Telescope: Adjust Scope
+  Telescope-&gt;&gt;Telescope: Translate Input to Motor Signals
+  Telescope-&gt;&gt;Quinn: Move Scope (X,Y)
+
+  Telescope--&gt;&gt;Roshan: Display Data on OLED
+  Roshan--&gt;&gt;Telescope: Data Received
+  Telescope-&gt;&gt;Telescope: Refresh Data (1s loop)</code></pre>
 <h2 id="message-structure">Message Structure</h2>
 <table>
 <thead>
