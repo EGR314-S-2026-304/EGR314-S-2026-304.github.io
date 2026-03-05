@@ -665,9 +665,9 @@
   Quinn (motors)-&gt;&gt;Quinn (motors): Translate Input to Motor Signals
   Quinn (motors)-&gt;&gt;Telescope: Move Scope (X,Y)
 
-  Telescope--&gt;&gt;Roshan (OLED): Display Data on OLED
-  Roshan (OLED)--&gt;&gt;Telescope: Data Received
-  Roshan (OLED)-&gt;&gt;Telescope: Refresh Data (1s loop)</code></pre>
+  Telescope--&gt;&gt;Quinn (motors): Data Received
+  Roshan (OLED)-&gt;&gt;Quinn (motors): Refresh Data (1s loop)
+  Quinn (motors)--&gt;&gt;Roshan (OLED): Display Data on OLED</code></pre>
 <h2 id="message-structure">Message Structure</h2>
 <table>
 <thead>
