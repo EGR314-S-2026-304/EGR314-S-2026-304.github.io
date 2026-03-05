@@ -30,9 +30,9 @@ sequenceDiagram
   Quinn (motors)->>Quinn (motors): Translate Input to Motor Signals
   Quinn (motors)->>Telescope: Move Scope (X,Y)
 
-  Telescope-->>Roshan (OLED): Display Data on OLED
-  Roshan (OLED)-->>Telescope: Data Received
-  Roshan (OLED)->>Telescope: Refresh Data (1s loop)
+  Telescope-->>Quinn (motors): Data Received
+  Roshan (OLED)->>Quinn (motors): Refresh Data (1s loop)
+  Quinn (motors)-->>Roshan (OLED): Display Data on OLED
 ```
 
 ## Message Structure
