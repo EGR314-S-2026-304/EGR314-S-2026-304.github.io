@@ -25,6 +25,7 @@ sequenceDiagram
   Dylan (wifi)->>Dylan (wifi): LED Blink (or not)
   Dylan (wifi)-->>Roshan (OLED): Display wifi status
   Dylan (wifi)->>Quinn (motors): Turn On Telescope
+  Quinn (motors)->>Quinn (motors): Translate Input to Motor Signals
   Quinn (motors)->>Telescope: Move Scope (X,Y Motors)
 
   Roshan (OLED)-->>Quinn (motors): Adjust Scope
