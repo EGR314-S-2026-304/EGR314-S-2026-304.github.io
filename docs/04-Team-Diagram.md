@@ -18,8 +18,8 @@ sequenceDiagram
 
   participant Roshan (OLED)
   participant Dylan (wifi)
-  participant Telescope
   participant Quinn (motors)
+  participant Telescope
 
   Roshan (OLED)-->>Dylan (wifi): Input Coordinates
   Dylan (wifi)->>Dylan (wifi): LED Blink
@@ -27,7 +27,7 @@ sequenceDiagram
   Quinn (motors)->>Telescope: Move Scope (X,Y Motors)
 
   Roshan (OLED)-->>Quinn (motors): Adjust Scope
-  Quinn (motors)->>Telescope: Translate Input to Motor Signals
+  Quinn (motors)->>Quinn (motors): Translate Input to Motor Signals
   Quinn (motors)->>Telescope: Move Scope (X,Y)
 
   Telescope-->>Roshan (OLED): Display Data on OLED
