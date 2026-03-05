@@ -147,3 +147,5 @@ The submarine is a compact, remotely operated underwater vehicle designed for ex
 In terms of final selection, Team 304 did a brainstorming process over Discord. As a team, we came up with ~100 concepts, both helpful and non-helpful, then conducted a ranking order by placing them into 5 groups, which we felt were necessary. We then took all the data and, as a team, concluded on the **EV-Scope**. 
 
 The EV Scope is our exploration device, designed to help observe and capture the cosmos and structures with precision and clarity. Despite the simple and compact design, the EV Scope delivers sufficient power and accuracy to effectively track distant objects, structures, and environments, making exploration both accessible and effective.
+
+Originally, our design was meant to include autonomous tracking and the ability to capture high-fidelity images but, due to the loss of team members (which was addressed further in the [appendix](https://egr314-s-2026-304.github.io/Appendix/01-Organization-Information/Append-Organization/), we decided on the simplified EV-scope as described above.
