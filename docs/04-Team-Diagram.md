@@ -23,16 +23,16 @@ sequenceDiagram
 
   Roshan (OLED)-->>Dylan (wifi): Input Coordinates
   Dylan (wifi)->>Dylan (wifi): LED Blink
-  Dylan (wifi)->>Telescope: Turn On Telescope
-  Telescope->>Quinn (motors): Move Scope (X,Y Motors)
+  Dylan (wifi)->>Quinn (motors): Turn On Telescope
+  Quinn (motors)->>Telescope: Move Scope (X,Y Motors)
 
-  Roshan (OLED)-->>Telescope: Adjust Scope
-  Telescope->>Telescope: Translate Input to Motor Signals
-  Telescope->>Quinn (motors): Move Scope (X,Y)
+  Roshan (OLED)-->>Quinn (motors): Adjust Scope
+  Quinn (motors)->>Telescope: Translate Input to Motor Signals
+  Quinn (motors)->>Telescope: Move Scope (X,Y)
 
   Telescope-->>Roshan (OLED): Display Data on OLED
   Roshan (OLED)-->>Telescope: Data Received
-  Telescope->>Telescope: Refresh Data (1s loop)
+  Roshan (OLED)->>Telescope: Refresh Data (1s loop)
 ```
 
 ## Message Structure
