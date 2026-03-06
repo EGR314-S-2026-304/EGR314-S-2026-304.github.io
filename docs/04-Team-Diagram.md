@@ -4,7 +4,7 @@ title: Block Diagram, Protocol, and Message Structure
 
 ## Team Block Diagram
 
-[](docs/image/314-Team304-TeamBlockDiagram(1).png)
+[](image/314-Team304-TeamBlockDiagram(1).png)
 
 
 
