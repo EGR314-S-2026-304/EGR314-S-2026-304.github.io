@@ -23,19 +23,23 @@ sequenceDiagram
   participant Quinn (motors)
   participant Telescope
 
-  Roshan (OLED)-->>Dylan (wifi): Input Coordinates
-  Dylan (wifi)-->>Roshan (OLED): Display wifi status
-  Dylan (wifi)->>Roshan (OLED): Turn On Telescope
+  Dylan (wifi)-->>Roshan (OLED): Display wifi status (Telescope On) 
+  Dylan (wifi)->>Roshan (OLED): Display wifi status (Telescope Off)
+  Dylan (wifi)->>Roshan (OLED): Error message
+  Roshan (OLED)->>Roshan (OLED): If error, OLED displays ERROR
+
+  Roshan (OLED)-->>Quinn (motors): Specify motor direction (FORWARD)
+  Roshan (OLED)-->>Quinn (motors): Specify motor direction (REVERSE)
+  Roshan (OLED)-->>Quinn (motors): Error message
   Quinn (motors)->>Quinn (motors): Translate Input to Motor Signals
   Quinn (motors)->>Telescope: Move Scope (X,Y Motors)
 
-  Roshan (OLED)-->>Quinn (motors): Adjust Scope
-  Quinn (motors)->>Quinn (motors): Translate Input to Motor Signals
-  Quinn (motors)->>Telescope: Move Scope (X,Y)
 
   Telescope-->>Quinn (motors): Data Received
   Roshan (OLED)->>Quinn (motors): Refresh Data (1s loop)
-  Quinn (motors)-->>Roshan (OLED): Display Data on OLED
+  Quinn (motors)-->>Roshan (OLED): Display Motor Direction on OLED (FORWARD)
+  Quinn (motors)-->>Roshan (OLED): Display Motor Direction on OLED (REVERSE)
+  Quinn (motors)-->>Roshan (OLED): Display Error on OLED
 ```
 
 ## Message Structure
