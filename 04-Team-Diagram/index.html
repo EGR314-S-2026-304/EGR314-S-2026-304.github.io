@@ -559,9 +559,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-biggest-software-changes" class="md-nav__link">
+  <a href="#message-structure-design-and-decision-process" class="md-nav__link">
     <span class="md-ellipsis">
-      5 Biggest Software Changes
+      Message Structure Design and Decision Process
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#top-5-software-design-changes-since-proposal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Top 5 Software Design Changes Since Proposal
     </span>
   </a>
   
@@ -739,9 +748,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-biggest-software-changes" class="md-nav__link">
+  <a href="#message-structure-design-and-decision-process" class="md-nav__link">
     <span class="md-ellipsis">
-      5 Biggest Software Changes
+      Message Structure Design and Decision Process
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#top-5-software-design-changes-since-proposal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Top 5 Software Design Changes Since Proposal
     </span>
   </a>
   
@@ -803,7 +821,10 @@
   Quinn (motors)--&gt;&gt;Roshan (OLED): Display Motor Direction on OLED (FORWARD)
   Quinn (motors)--&gt;&gt;Roshan (OLED): Display Motor Direction on OLED (REVERSE)
   Quinn (motors)--&gt;&gt;Roshan (OLED): Display Error on OLED</code></pre>
-This communication sequence effectively satisfies the users needs and product requirements by providing a reliable, efficient, and linear path for the user to communicate what they need to the HMI, and thereafter convert that need into motor movements and ideally data collection. It's a simple system--assuming that the user is familiar with the product and its uses. It senses wifi connection, and only allows for HMI to motor communication in the case that wifi is acquired, as data collection without MQTT would simply result in lost data.<p></p>
+The communication sequence diagram illustrates how information flows between the OLED interface (Roshan), WiFi subsystem (Dylan), motor control subsystem (Quinn), and the telescope. This sequence directly satisfies user needs by ensuring that system status, control inputs, and feedback are processed in a clear and reliable order.<p></p>
+<p>From the diagram, the system first prioritizes WiFi status updates (steps 1–3), which are immediately displayed on the OLED. This satisfies the user requirement of real-time system awareness. If an error occurs (step 4), the OLED displays an error message instead of allowing further operation, ensuring safe system behavior.</p>
+<p>User commands such as motor direction (steps 5–6) are transmitted to the motor subsystem, which then translates these inputs into physical motor signals (step 8). The telescope responds by moving accordingly (step 9), and confirmation data is returned (step 10). This closed-loop interaction ensures that user inputs result in correct physical behavior, fulfilling functional requirements.</p>
+<p>Finally, the system continuously refreshes data (step 11) and updates the OLED with motor direction or error states (steps 12–14). This continuous feedback loop ensures the user is always informed of system status, improving usability and reliability.</p>
 <h2 id="message-structure">Message Structure</h2>
 <table>
 <thead>
@@ -969,13 +990,38 @@ This communication sequence effectively satisfies the users needs and product re
 </tr>
 </tbody>
 </table>
-<h2 id="5-biggest-software-changes">5 Biggest Software Changes</h2>
+<hr>
+<h2 id="message-structure-design-and-decision-process">Message Structure Design and Decision Process</h2>
+<p>The team initially selected a simple message format using "AZ" as a start identifier and "BY" as an end identifier. This decision was made to simplify early development and ensure all subsystems could communicate quickly without complex parsing.</p>
+<p>However, as shown in the sequence diagram, multiple types of messages are exchanged, including WiFi status, motor commands, and error messages. This required the team to refine the structure to include identifiable payloads within the message, allowing each subsystem to interpret commands correctly.</p>
+<p>The team chose to maintain a lightweight protocol rather than adopting a fully complex structure to avoid increasing software overhead. Instead, message meaning is determined by keywords such as "FORWARD", "REVERSE", or "ERROR", as seen in steps 5–7 and 12–14 of the diagram. This approach balances simplicity with functionality while still allowing clear communication between subsystems.</p>
+<p>The decision-making process focused on three priorities:
+- Ensuring compatibility across all subsystems
+- Minimizing processing complexity on microcontrollers
+- Allowing future expansion of commands without redesigning the entire system</p>
+<hr>
+<h2 id="top-5-software-design-changes-since-proposal">Top 5 Software Design Changes Since Proposal</h2>
 <ol>
-<li>Dylan was originally meant to send Quinn wifi status, but this would lead to unnecessary complication; it was changed to where Dylan sends Roshan wifi status instead.</li>
-<li>Roshan updated his code to ensure compatibility with both Dylan’s and Quinn’s boards, accommodating the change where Dylan now sends WiFi status to Roshan.</li>
-<li>Quinn's code originall only ran if wifi was recieved, but this was changed as it would be redundant for wifi to be checked both by Roshan and Quinn</li>
-<li></li>
+<li><strong>Addition of WiFi Dependency for System Operation</strong></li>
 </ol>
+<p>In the original proposal, motor control could occur independently of WiFi status. This posed a risk of unintended operation. As shown in steps 1–4 of the sequence diagram, WiFi status is now checked first, and the system only proceeds if a valid connection is confirmed. This change improves system safety and ensures proper operation conditions.</p>
+<ol>
+<li><strong>Implementation of Error Handling and Safe State Behavior</strong></li>
+</ol>
+<p>Initially, the system did not properly handle invalid or unexpected messages. This led to potential system instability. The updated design includes explicit error message handling (steps 3–4 and 14), where the OLED displays an error and prevents further action. This ensures the system enters a safe state instead of executing unintended commands.</p>
+<ol>
+<li><strong>Refinement of Message Interpretation Logic</strong></li>
+</ol>
+<p>Early versions of the software relied on minimal parsing, making it difficult to distinguish between different command types. The updated design uses keyword-based interpretation (e.g., FORWARD, REVERSE, ERROR), as shown in steps 5–7. This allows the system to correctly route commands to the appropriate subsystem and improves communication clarity.</p>
+<ol>
+<li><strong>Closed-Loop Feedback Integration</strong></li>
+</ol>
+<p>The original design did not include confirmation that commands were successfully executed. In the updated version, the motor subsystem sends feedback after processing commands (steps 9–10), which is then reflected back to the OLED (steps 12–13). This closed-loop system improves reliability by ensuring actions are verified before being displayed to the user.</p>
+<ol>
+<li><strong>Continuous Data Refresh and Display Updates</strong></li>
+</ol>
+<p>Previously, the system updated outputs only when new input was received. This caused inconsistent display behavior. The updated design introduces a periodic refresh loop (step 11), ensuring the OLED always reflects the current system state. This improves user experience and aligns with real-time system requirements.</p>
+<hr>
 
 
 
