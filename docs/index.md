@@ -22,6 +22,8 @@ Team 304 is a 3-person team consisting of Dylan, Quinn, and Roshan. All are stud
 ## Summary
 Our project is meant to be an EV-Scope that automatically tracks celestial objects and takes pictures of the object for later observation. It does so by taking the commands given by an HMI, ennacting those commands via the motor system, and using MQTT to send the data thereafter to an online system.
 
+## Final Project Picture
+
 
 ## Team Members Datasheet links
 
