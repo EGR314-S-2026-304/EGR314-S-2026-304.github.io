@@ -131,23 +131,14 @@ The decision-making process focused on three priorities:
 ## Top 5 Software Design Changes Since Proposal
 
 1. **Addition of WiFi Dependency for System Operation**
-
    In the original proposal, motor control could occur independently of WiFi status. This posed a risk of unintended operation. As shown in steps 1–4 of the sequence diagram, WiFi status is now checked first, and the system only proceeds if a valid connection is confirmed. This change improves system safety and ensures proper operation conditions.
-
 2. **Implementation of Error Handling and Safe State Behavior**
-
    Initially, the system did not properly handle invalid or unexpected messages. This led to potential system instability. The updated design includes explicit error message handling (steps 3–4 and 14), where the OLED displays an error and prevents further action. This ensures the system enters a safe state instead of executing unintended commands.
-
 3. **Refinement of Message Interpretation Logic**
-
    Early versions of the software relied on minimal parsing, making it difficult to distinguish between different command types. The updated design uses keyword-based interpretation (e.g., FORWARD, REVERSE, ERROR), as shown in steps 5–7. This allows the system to correctly route commands to the appropriate subsystem and improves communication clarity.
-
 4. **Closed-Loop Feedback Integration**
-
    The original design did not include confirmation that commands were successfully executed. In the updated version, the motor subsystem sends feedback after processing commands (steps 9–10), which is then reflected back to the OLED (steps 12–13). This closed-loop system improves reliability by ensuring actions are verified before being displayed to the user.
-
 5. **Continuous Data Refresh and Display Updates**
-
    Previously, the system updated outputs only when new input was received. This caused inconsistent display behavior. The updated design introduces a periodic refresh loop (step 11), ensuring the OLED always reflects the current system state. This improves user experience and aligns with real-time system requirements.
 
 ---
