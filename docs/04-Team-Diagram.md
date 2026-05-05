@@ -4,7 +4,7 @@ title: Block Diagram, Protocol, and Message Structure
 
 ## Team Block Diagram
 
-<img width="2472" height="898" alt="314-Team304-TeamBlockDiagram drawio" src="https://github.com/user-attachments/assets/80eb494d-1192-46d6-a0c1-d6fb597f78f2" />
+![Teamdigram](image/314-Team304-TeamBlockDiagramfinal.drawio.png)
 
 
 **Figure 1**: Subsystem PCBs and Connections, PDF version [*here*](https://github.com/EGR314-S-2026-304/EGR314-S-2026-304.github.io/edit/main/docs/04-Team-Diagram.md)
