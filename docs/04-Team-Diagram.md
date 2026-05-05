@@ -102,3 +102,7 @@ Message Type 8:
 | Byte 1-2 (uint16_t) | Byte 3 (uint8_t)         |
 | ------------------- | ------------------------ |
 | 08                  | subsystemState (bool)    |
+
+## 5 Biggest Software Changes
+1. Dylan was originally meant to send Quinn wifi status, but this would lead to unnecessary complication; it was changed to where Dylan sends Roshan wifi status instead.
+2. 
