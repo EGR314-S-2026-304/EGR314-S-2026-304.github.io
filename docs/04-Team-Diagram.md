@@ -7,7 +7,7 @@ title: Block Diagram, Protocol, and Message Structure
 ![Teamdigram](image/314-Team304-TeamBlockDiagramfinal.drawio.png)
 
 
-**Figure 1**: Subsystem PCBs and Connections, PDF version [*here*](https://github.com/EGR314-S-2026-304/EGR314-S-2026-304.github.io/edit/main/docs/04-Team-Diagram.md)
+**Figure 1**: Subsystem PCBs and Connections, PDF version [*here*](image/314-Team304-TeamBlockDiagramfinal.drawio.pdf)
 
 We decided to create our block diagram as above specifically so as to keep communication between subsystems as simple as possible. Included in the block diagram are the necessary UART connections, wireless connections, actuators, as well as a human-machine interface, as required by the project. The motor subsystem is the main feature of the current product, so it functions as a sort of defacto master subsystem, and is therefore centered in the diagram.
 
