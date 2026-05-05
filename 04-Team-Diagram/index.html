@@ -685,7 +685,7 @@
 <p><strong>Figure 1</strong>: Subsystem PCBs and Connections, PDF version <a href="https://github.com/user-attachments/files/25704085/314-Team304-TeamBlockDiagram.drawio.pdf"><em>here</em></a></p>
 <p>We decided to create our block diagram as above specifically so as to keep communication between subsystems as simple as possible. Included in the block diagram are the necessary UART connections, wireless connections, actuators, as well as a human-machine interface, as required by the project. The motor subsystem is the main feature of the current product, so it functions as a sort of defacto master subsystem, and is therefore centered in the diagram.</p>
 <h2 id="communication-sequence">Communication Sequence</h2>
-<pre class="mermaid"><code>sequenceDiagram
+<p></p><pre class="mermaid"><code>sequenceDiagram
   autonumber
 
 
@@ -711,6 +711,7 @@
   Quinn (motors)--&gt;&gt;Roshan (OLED): Display Motor Direction on OLED (FORWARD)
   Quinn (motors)--&gt;&gt;Roshan (OLED): Display Motor Direction on OLED (REVERSE)
   Quinn (motors)--&gt;&gt;Roshan (OLED): Display Error on OLED</code></pre>
+This communication sequence effectively satisfies the users needs and product requirements by providing a reliable, efficient, and linear path for the user to communicate what they need to the HMI, and thereafter convert that need into motor movements and ideally data collection. It's a simple system--assuming that the user is familiar with the product and its uses. It senses wifi connection, and only allows for HMI to motor communication in the case that wifi is acquired, as data collection without MQTT would simply result in lost data.<p></p>
 <h2 id="message-structure">Message Structure</h2>
 <table>
 <thead>
