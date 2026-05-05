@@ -41,6 +41,7 @@ sequenceDiagram
   Quinn (motors)-->>Roshan (OLED): Display Motor Direction on OLED (REVERSE)
   Quinn (motors)-->>Roshan (OLED): Display Error on OLED
 ```
+This communication sequence effectively satisfies the users needs and product requirements by providing a reliable, efficient, and linear path for the user to communicate what they need to the HMI, and thereafter convert that need into motor movements and ideally data collection. It's a simple system--assuming that the user is familiar with the product and its uses. It senses wifi connection, and only allows for HMI to motor communication in the case that wifi is acquired, as data collection without MQTT would simply result in lost data.
 
 ## Message Structure
 
