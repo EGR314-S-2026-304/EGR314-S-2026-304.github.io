@@ -105,4 +105,4 @@ Message Type 8:
 
 ## 5 Biggest Software Changes
 1. Dylan was originally meant to send Quinn wifi status, but this would lead to unnecessary complication; it was changed to where Dylan sends Roshan wifi status instead.
-2. 
+2. Roshan updated his code to ensure compatibility with both Dylan’s and Quinn’s boards, accommodating the change where Dylan now sends WiFi status to Roshan.
